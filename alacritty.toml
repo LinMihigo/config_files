@@ -1,0 +1,144 @@
+# Shell config
+
+shell = "wsl.exe ~ -d Ubuntu-20.04"
+live_config_reload = true
+
+[window]
+dimensions = { columns = 130, lines = 50 }
+position.x = 1000
+
+position.y = 400
+padding.x = 5
+padding.y = 2
+decorations = "Full"
+decorations_theme_variant = "None"
+opacity = 1.0
+blur = true
+startup_mode = "Windowed"
+
+
+[scrolling]
+history = 10000
+
+multiplier = 3
+
+[font]
+normal.family = "CodeNewRoman Nerd Font Mono"
+bold.family = "CodeNewRoman Nerd Font Mono"
+italic.family = "CodeNewRoman Nerd Font Mono"
+bold_italic.family = "CodeNewRoman Nerd Font Mono"
+
+size = 8.0
+
+# Github light
+# Default colors
+[colors.primary]
+background = '#ffffff'
+foreground = '#24292f'
+
+# Normal colors
+[colors.normal]
+black   = '#24292e'
+red     = '#d73a49'
+green   = '#28a745'
+yellow  = '#dbab09'
+
+blue    = '#0366d6'
+magenta = '#5a32a3'
+
+cyan    = '#0598bc'
+
+white   = '#6a737d'
+
+# Bright colors
+[colors.bright]
+
+black   = '#959da5'
+red     = '#cb2431'
+green   = '#22863a'
+yellow  = '#b08800'
+blue    = '#005cc5'
+magenta = '#5a32a3'
+cyan    = '#3192aa'
+white   = '#d1d5da'
+
+# Github dark
+# Default colors
+#[colors.primary]
+#background = '#24292e'
+#foreground = '#d1d5da'
+
+
+# Normal colors
+#[colors.normal]
+#black   = '#586069'
+#red     = '#ea4a5a'
+#green   = '#34d058'
+
+#yellow  = '#ffea7f'
+#blue    = '#2188ff'
+#magenta = '#b392f0'
+
+#cyan    = '#39c5cf'
+#white   = '#d1d5da'
+
+
+# Bright colors
+#[colors.bright]
+#black   = '#959da5'
+#red     = '#f97583'
+#green   = '#85e89d'
+#yellow  = '#ffea7f'
+#blue    = '#79b8ff'
+
+#magenta = '#b392f0'
+#cyan    = '#56d4dd'
+
+#white   = '#fafbfc'
+
+[[colors.indexed_colors]]
+index = 16
+color = '#d18616'
+
+
+[[colors.indexed_colors]]
+
+index = 17
+color = '#f97583'
+
+
+
+[[colors.indexed_colors]]
+index = 16
+color = '#d18616'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#cb2431'
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style.blinking = "On"
+
+
+[terminal]
+
+osc52 = "Copypaste"
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+{ key = "W", mods = "Control", action = "Quit" },
+
+{ key = "V", mods = "Control", action = "Paste"},
+{ key = "C", mods = "Control", action = "Copy"},
+{ key = "T", mods = "Control", action = "SpawnNewInstance"}
+]
+
+[debug]
+# render_timer = true
+
